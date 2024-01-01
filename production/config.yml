@@ -1,0 +1,109 @@
+baseURL: "https://shubhamarora.dev/"
+paginate: 5
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
+
+params:
+  env: production
+  title: Shubham Arora
+  description: "Shubham Arora - Dev Blog"
+  keywords: [Blog, Portfolio, Dev Blog, Development]
+  author: Me
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  label:
+    text: "Shubham Arora"
+    icon: /apple-touch-icon.png
+    iconHeight: 35
+
+  homeInfoParams:
+    Title: "Hi there \U0001F44B"
+    Content: 27 year old Cetified Liferay DXP Developer. Welcome to my blog. Connect with me on following platforms.
+
+  socialIcons:
+    - name: mastodon
+      url: "https://mastodon.social/@arshubham"
+    - name: github
+      url: "https://github.com/arshubham"
+    - name: steam
+      url: "https://steamcommunity.com/id/shubhamarora"
+    - name: gitlab
+      url: "https://gitlab.com/shubhamarora"
+    - name: discord
+      url: "https://discord.com/users/769523996160950332"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/shubhamarora868/"
+    - name: telegram
+      url: "https://t.me/shubhamarora"
+    - name: other
+      title: 'Playstation: cosmic_raptorex'
+      url: cosmic_raptorex
+
+  cover:
+    hidden: true
+    hiddenInList: true
+    hiddenInSingle: true
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+    - identifier: search
+      name: search
+      url: /search/
+      weight: 10
+    - identifier: posts
+      name: /dev/log
+      url: /posts/
+      weight: 20
+    - identifier: categories
+      name: categories
+      url: /categories/
+      weight: 30
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 40
+
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    lineNos: true

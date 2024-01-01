@@ -1,0 +1,4 @@
+baseURL = 'https://shubhamarora.dev/'
+languageCode = 'en-us'
+title = 'Shubham Arora | Dev Blog'
+theme = 'hugo-PaperMod'
