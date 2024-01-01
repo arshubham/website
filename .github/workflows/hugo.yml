@@ -45,12 +45,5 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./public
       - name: Download a Build Artifact
         uses: actions/download-artifact@v4.1.0
-        with:
-          # Destination path. Supports basic tilde expansion. Defaults to $GITHUB_WORKSPACE
-          path: ./public
